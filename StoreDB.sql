@@ -1,0 +1,21 @@
+CREATE TABLE items (id INTEGER, name TEXT, price REAL, quantity INTEGER, rating INTEGER, sold INTEGER);
+INSERT INTO items VALUES(1, "Hot Wheels Polizei", 1.00, 5, 4, 1);
+INSERT INTO items VALUES(3, "Webcam", 100.50, 10, 9, 1);
+INSERT INTO items VALUES(4, "Xbox One", 379.96, 100, 8, 50);
+INSERT INTO items VALUES(6, "PS4", 400.00, 100, 8, 51);
+INSERT INTO items VALUES(7, "Gaming PC", 1500.99, 10, 10, 1);
+INSERT INTO items VALUES(88, "Mechanical Keyboard", 200.99, 10, 9, 3);
+INSERT INTO items VALUES(45, "Gaming mouse", 200, 10, 8, 3);
+INSERT INTO items VALUES(32, "Overwatch", 64.99, 50, 9, 25);
+INSERT INTO items VALUES(23, "Rainbow Six Siege", 64.99, 50, 8, 20);
+INSERT INTO items VALUES(12, "Turtle Beach Recon 50", 50, 50, 5, 2);
+INSERT INTO items VALUES(3, "LEGO Movie game", 10, 10, 7, 1);
+INSERT INTO items VALUES(4, "Nintendo Switch", 200, 10, 7, 3);
+INSERT INTO items VALUES(6, "Dying Light", 30, 23, 8, 13);
+INSERT INTO items VALUES(7, "COD: WWII", 64.99, 99, 7, 55);
+INSERT INTO items VALUES(8, "Sudden Strike 4", 64.99, 20, 5, 11);
+SELECT * FROM items ORDER BY price DESC;
+
+SELECT SUM(price) FROM items;
+SELECT SUM(quantity) FROM items;
+SELECT AVG(price) FROM items;
